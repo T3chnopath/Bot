@@ -1,32 +1,7 @@
+#include "motor.h"
+#include "bot.h"
 #include <stdio.h>
 #include <string.h>
-
-typedef struct Motor_t{
-    char name[20];
-    int speed;
-} Motor_t;
-
-typedef struct Bot_t{
-    Motor_t FL;
-    Motor_t FR;
-    Motor_t BL;
-    Motor_t BR;
-
-} Bot_t;
-
-
-void DisplayMotor(Motor_t motor) {
-    printf("Name: %s\n", motor.name);
-    printf("Speed: %d\n", motor.speed);
-    printf("\n");
-}
-
-void DisplayBot(Bot_t * bot){
-    DisplayMotor(bot->FL);
-    DisplayMotor(bot->FR);
-    DisplayMotor(bot->BL);
-    DisplayMotor(bot->BR);
-}
 
 int main() {
 
