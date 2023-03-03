@@ -14,5 +14,7 @@ int main() {
     DisplayBot(&Bot);
 
 	DriveBot(&Bot, FORWARD); 
+	RotateBot(&Bot, 45);
+	RotateBot(&Bot, -45);
     return 0;
 }
