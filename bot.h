@@ -9,7 +9,6 @@ typedef struct Bot_t{
     Motor_t FR;
     Motor_t BL;
     Motor_t BR;
-
 } Bot_t;
 
 void DisplayBot(Bot_t *bot);

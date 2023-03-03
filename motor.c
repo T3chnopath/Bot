@@ -12,7 +12,6 @@ void DriveMotor(Motor_t motor, Direction_t dir) {
 	}
 
 	printf("at speed %d. \n", motor.speed);
-
 }
 
 
