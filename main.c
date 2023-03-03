@@ -11,6 +11,8 @@ int main() {
     Motor_t BR = {"Back Right", 10};
     
     Bot_t Bot = {FL, FR, BL, BR};
-    DisplayBot(&Bot); 
+    DisplayBot(&Bot);
+
+	DriveBot(&Bot, FORWARD); 
     return 0;
 }

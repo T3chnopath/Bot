@@ -13,4 +13,5 @@ typedef struct Bot_t{
 } Bot_t;
 
 void DisplayBot(Bot_t *bot);
+void DriveBot(Bot_t *bot, Direction_t dir);
 #endif
