@@ -12,7 +12,8 @@ void DriveBot(Bot_t *bot, Direction_t dir) {
 	DriveMotor(bot->FL, dir);
 	DriveMotor(bot->FR, dir);
 	DriveMotor(bot->BL, dir);
-	DriveMotor(bot->BR, dir);	
+	DriveMotor(bot->BR, dir);
+	printf("\n");
 }
 
 void RotateBot(Bot_t *bot, int angle) {
@@ -24,7 +25,7 @@ void RotateBot(Bot_t *bot, int angle) {
 		DriveMotor(bot->BR, BACKWARD);
 	}
 
-	if(angle < 0) {
+	else if(angle < 0) {
 		printf("Rotating bot left %d degrees.\n", angle);
 		DriveMotor(bot->FR, FORWARD);
 		DriveMotor(bot->BR, FORWARD);
@@ -32,4 +33,10 @@ void RotateBot(Bot_t *bot, int angle) {
 		DriveMotor(bot->BL, BACKWARD);
 	}
 
+	
+	else{
+		printf("Bot not rotating.\n");
+	}
+
+	printf("\n");
 }
